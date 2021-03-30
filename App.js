@@ -234,15 +234,7 @@ const App = () => {
     <View style={styles.wrapperHome}>
       <View style={styles.wrapperHomeContent}>
         {/* search bar */}
-        <View style={{ marginHorizontal: 17, flexDirection: 'row', paddingTop: 15 }}>
-          <View style={{ position: 'relative', flex: 1, marginRight: 18 }}>
-            <TextInput placeholder='What do you want to eat?' style={ styles.wrapperSearch } />
-            <Image source={ require('./src/assets/icon/search.png') } style={{ position: 'absolute', top: 8, left: 12 }} />
-          </View>
-          <View style={{ width: 35, alignItems: 'center', justifyContent: 'center' }}>
-            <Image source={require('./src/assets/icon/promo.png')} />
-          </View>
-        </View>
+        <Molecules.SearchFeature img={ require('./src/assets/icon/search.png') } icon={ require('./src/assets/icon/promo.png') } />
         <ScrollView>
           {/* gopay menu */}
           <View style={styles.gopayWrapper}>
